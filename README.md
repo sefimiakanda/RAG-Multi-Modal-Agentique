@@ -1,10 +1,9 @@
 <div align="center">
 
-# 🛠️ ASSISTANT INTELLIGENT MULTIMODAL POUR LA MAINTENANCE INDUSTRIELLE
 
 ### RAG agentique multimodal : interroger la documentation technique (texte, schémas, images) avec un agent IA
 
-**Projet de mémoire · PyTorch / CLIP / ChromaDB / LangGraph / Streamlit**
+**Projet · PyTorch / CLIP / ChromaDB / LangGraph / Streamlit**
 
 <p>
   <img src="https://img.shields.io/badge/Python-3.11%20%7C%203.12-3776AB?logo=python&logoColor=white" />
@@ -17,29 +16,12 @@
 
 **Du PDF brut à une recherche multimodale intelligente : extraire, encoder, indexer, retrouver et raisonner.**
 
-[Contexte du mémoire](#-contexte-du-mémoire) · [Application](#-application-en-action) · [Architecture](#-architecture-du-système) · [Résultats](#-résultats-et-validation) · [Installation](#-installation-et-lancement) · [Feuille de route](#-feuille-de-route-du-mémoire)
+
 
 </div>
 
 ---
 
-## 🎓 Contexte du mémoire
-
-**Sujet :** *Conception et développement d'un assistant intelligent multimodal basé sur le RAG agentique pour l'assistance à la maintenance des équipements industriels.*
-
-**Auteur :** Fidèle Miakanda, étudiant en génie informatique, intelligence artificielle et innovation.
-
-**Problématique.** Les techniciens de maintenance doivent retrouver rapidement une information dans une documentation volumineuse et hétérogène : manuels constructeur, procédures, schémas, photos d'équipements, historiques d'interventions. Une recherche par mots-clés ne suffit pas, car l'information utile se trouve souvent dans un schéma ou à la jonction du texte et de l'image.
-
-**Objectif.** Concevoir un assistant capable de :
-- indexer la documentation technique sous forme **multimodale** (texte et images) ;
-- répondre à une question, à une photo de composant, ou aux deux combinés ;
-- raisonner en plusieurs étapes grâce à un **agent** (pattern ReAct) qui décide quand et comment interroger la base documentaire ;
-- **citer ses sources** (document, page, figure) afin que le technicien puisse vérifier.
-
-**État d'avancement.** Ce dépôt contient un **prototype initial** : le pipeline RAG multimodal et agentique est fonctionnel, mais il est pour l'instant démontré sur un document générique (article *Attention Is All You Need*). L'adaptation au domaine de la maintenance industrielle est décrite dans la [feuille de route](#-feuille-de-route-du-mémoire) et constitue le travail du mémoire.
-
----
 
 ## 🌟 Présentation
 
@@ -455,23 +437,6 @@ Les caches, environnements virtuels, index temporaires et clés API ne doivent p
 
 ---
 
-## 🧭 Feuille de route du mémoire
-
-Éléments **prévus**, non encore réalisés :
-
-| Phase | Travaux |
-|---|---|
-| 1. État de l'art | RAG, RAG multimodal, systèmes agentiques, IA pour la maintenance prédictive et corrective |
-| 2. Corpus de maintenance | Constitution d'un corpus : manuels techniques, fiches de procédure, schémas, photos d'équipements |
-| 3. Adaptation du pipeline | OCR pour documents numérisés, découpage adapté aux procédures, métadonnées métier (équipement, référence, type de panne) |
-| 4. Agent spécialisé | Outils dédiés (recherche documentaire, historique d'interventions, aide au diagnostic) et consignes de sécurité |
-| 5. Évaluation | Jeu de questions annotées, métriques de retrieval, fidélité aux sources, retours d'utilisateurs |
-| 6. Rédaction | Mémoire, démonstration et analyse des résultats |
-
-Le calendrier sera précisé avec l'encadrant.
-
----
-
 ## 🔭 Limites et perspectives
 
 Cette version valide le pipeline de retrieval multimodal et l'orchestration de l'agent. Certaines limites restent à prendre en compte :
@@ -500,19 +465,11 @@ Pistes d'amélioration :
 
 Étudiant en **génie informatique, intelligence artificielle et innovation**
 
-Projet de mémoire · Assistant intelligent multimodal basé sur le RAG agentique pour la maintenance industrielle
 
 [![GitHub](https://img.shields.io/badge/GitHub-sefimiakanda-181717?logo=github&logoColor=white)](https://github.com/sefimiakanda)
 
 </div>
 
-### Base du prototype et crédits
-
-Le prototype initial (extraction PDF, embeddings CLIP, indexation ChromaDB, agent LangGraph, interface Streamlit et tests) repose sur le projet **RAG Multi-Modal Agentique** réalisé par **Hiba Zbari** (étudiante ingénieure Big Data & Artificial Intelligence) dans le cadre de l'Activité Pratique N°3 : [github.com/flamekk/RAG-Multi-Modal-Agentique](https://github.com/flamekk/RAG-Multi-Modal-Agentique).
-
-Les évolutions propres au mémoire (adaptation à la maintenance industrielle, nouveaux corpus, agent spécialisé, évaluation) sont développées par Fidèle Miakanda.
-
----
 
 <div align="center">
 
