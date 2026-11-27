@@ -460,6 +460,7 @@ Pistes d'amélioration :
 Vaswani et al. (2017).
 
 *Attention is all you need*
+
 [Lire le document de recherche sur ArXiv](https://arxiv.org/abs/1706.03762)
 
 ## 👨‍💻 Auteur
